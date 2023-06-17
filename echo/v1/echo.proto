@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package echo.v1;
+
+option go_package = "github.com/clavinjune/protobuf-project-template/echo/v1;v1";
+
+// echo resource
+message Echo {
+  // echo unique identifier
+  string id = 1;
+  // message to be echoed
+  string message = 2;
+}
